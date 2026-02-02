@@ -1,5 +1,13 @@
 # IGIMF_Theory_codes
-This repository contains codes to generate data samples of stars for star clusters or even whole galaxies. It is based on the IGIMF Theory and similar to the galIMF code by Yan Zhiqiang et al. In contrast to their codes, this module calculates the discrete stellar masses. This allows more easily to simulate composite IMFs of star-forming regions.
+This repository contains codes to generate data samples of stars for star clusters or even whole galaxies. It is based on the IGIMF Theory and similar to the [galIMF](https://github.com/Azeret/galIMF) code by Yan Zhiqiang et al. In contrast to their codes, this module calculates the discrete stellar masses. This allows more easily to simulate composite IMFs of star-forming regions.
+
+## Contents
+
+* IMF_sampling: Generates optimally sampled stellar Initial Mass Functions (IMFs)
+* ECMF_sampling: Generates optimally sampled Embedded Cluster Mass Functions (ECMFs) within the IGIMF Theory as well as custom star cluster samples
+* cIMF_and_IGIMF_sampling: Generates optimally sampled Integrated Galactic IMFs (IGIMFs) and custom composite IMFs (cIMFs)
+* cIMF_generating_optimal: Calculates the optimally sampled cIMF of a custom star cluster sample. Allows to investigate the cIMF form without drawing stellar masses
+* cIMF_generating_random: Similar to cIMF_generating_optimal but for randomly sampled stellar IMFs. Allows for comparison between optimally and randomly sampled cIMFs
 
 ## Installation
 
