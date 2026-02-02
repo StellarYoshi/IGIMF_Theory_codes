@@ -1,5 +1,5 @@
 # IGIMF_Theory_codes
-This repository contains codes to generate data samples of stars for star clusters or even whole galaxies. It is based on the IGIMF Theory and similar to the [galIMF](https://github.com/Azeret/galIMF) code by Yan Zhiqiang et al. In contrast to their codes, this module calculates the discrete stellar masses. This allows more easily to simulate composite IMFs of star-forming regions.
+This repository contains codes to generate data samples of stars for star clusters or even whole galaxies. It is based on the IGIMF Theory and similar to the [galIMF](https://github.com/Azeret/galIMF) code by Yan Zhiqiang et al. In contrast to their codes, the main focus of the provided code are sub-galactic regions, especially composite IMFs, instead of galaxy-wide stellar populations. Further, the code in this module calculates the discrete stellar masses instead of histograms. This allows for more exact simulations of dynamical processes within star-forming regions, such as dynamical ejections.
 
 ## Contents
 
