@@ -17,9 +17,3 @@ It is further suggested to read the supplementary document of the galIMF module.
 * cIMF_generating_random: Similar to cIMF_generating_optimal but for randomly sampled stellar IMFs. Allows for comparison between optimally and randomly sampled cIMFs
 
 All code is provided in the form of jupyter notebook files.
-
-## Dependencies
-
-- **numpy**: Numerical computing library
-- **scipy**: Scientific computing library (for optimization and integration)
-- **matplotlib**: Plotting library
