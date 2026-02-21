@@ -1,6 +1,13 @@
 # IGIMF_Theory_codes
 This repository contains codes to generate data samples of stars for star clusters or even whole galaxies. It is based on the IGIMF Theory and similar to the [galIMF](https://github.com/Azeret/galIMF) code by Yan Zhiqiang et al. In contrast to their codes, the main focus of the provided code are sub-galactic regions, especially composite IMFs, instead of galaxy-wide stellar populations. Further, the code in this module calculates the discrete stellar masses instead of histograms. This allows for more exact simulations of dynamical processes within star-forming regions, such as dynamical ejections.
 
+For a general introduction to the IGIMF Theory and Optimal Sampling, it is suggested to read the supplementary pdf.
+It also contains the mathematics concerning a reformulation of the Optimal Sampling in order to generate star cluster samples with a fixed most massive cluster mass. This may be useful to more easily create cluster distributions that match observational samples, especially on sub-galactic scales where the local most massive cluster mass won't always be the mass of the most massive cluster that formed galaxy-wide. This sampling procedure is not constrained for the sampling of only star clusters but also e.g. molecular cloud masses and may therefore also be useful e.g. for the ICIMF Theory.
+Opposed to usual quantile-based sampling it does not take the number of data points N as input, but the desired properties of the generated data (total sum, value of the largest data point). 
+A generalized formulation and possible uses of this algorithm may be covered in the future.
+
+It is further suggested to read the supplementary document of the galIMF module.
+
 ## Contents
 
 * IMF_sampling: Generates optimally sampled stellar Initial Mass Functions (IMFs)
@@ -9,32 +16,10 @@ This repository contains codes to generate data samples of stars for star cluste
 * cIMF_generating_optimal: Calculates the optimally sampled cIMF of a custom star cluster sample. Allows to investigate the cIMF form without drawing stellar masses
 * cIMF_generating_random: Similar to cIMF_generating_optimal but for randomly sampled stellar IMFs. Allows for comparison between optimally and randomly sampled cIMFs
 
-## Installation
-
-To run the demo notebook, first install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Demo
-
-After installing the dependencies, you can run the Jupyter notebook:
-
-```bash
-jupyter notebook OSGIMF_Master_Function.ipynb
-```
-
-Alternatively, you can use JupyterLab:
-
-```bash
-pip install jupyterlab
-jupyter lab OSGIMF_Master_Function.ipynb
-```
+All code is provided in the form of jupyter notebook files.
 
 ## Dependencies
 
 - **numpy**: Numerical computing library
 - **scipy**: Scientific computing library (for optimization and integration)
 - **matplotlib**: Plotting library
-- **jupyter**: Interactive notebook environment
