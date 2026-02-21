@@ -20,4 +20,4 @@ All code is provided in the form of jupyter notebook files.
 
 ## Caution
 
-The codes were not yet tested independently.
+The codes were not yet tested independently, so currently caution is advised when using them.
